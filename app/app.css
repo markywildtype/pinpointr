@@ -1,3 +1,9 @@
+body {
+  background: url('img/world_map.jpg');
+  background-attachment: fixed;
+  background-position: center;
+}
+
 #logo {
   width: 30%;
   position: relative;
@@ -12,6 +18,8 @@
   width: 75%;
   padding: 20px;
   margin: auto;
+  border: 2px solid white;
+  box-shadow: 20px 20px 80px;
   border-radius: 10px;
   margin-top: 10px;
 }

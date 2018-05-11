@@ -2,8 +2,8 @@
 <div id="form-container">
 <form class="query-form" action="index.html" method="post">
   <input type="text" placeholder="Enter Address" ng-model="$ctrl.mapQuery"/>
-  <div class="answer-box">{{$ctrl.latitude || 'Latitude'}}</div>
-  <div class="answer-box">{{$ctrl.longitude || 'Longitude'}}</div>
+  <div class="answer-box">{{'Latitude: ' + $ctrl.latitude}}</div>
+  <div class="answer-box">{{'Longitude: ' + $ctrl.longitude}}</div>
   <input type="button" value="PinPoint me!" class="button" ng-click="$ctrl.getCoords($ctrl.mapQuery)">
 </form>
 </div>
