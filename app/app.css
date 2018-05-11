@@ -64,3 +64,11 @@ input {
   color: white;
   width: auto;
 }
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 0.7em;
+}

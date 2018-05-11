@@ -6,6 +6,7 @@ angular.module('queryForm').
     controller: ['$http',
       function QueryFormController($http){
         var self = this;
+        self.test = 'This is a test string';
 
         self.getCoords = function(mapQuery){
           $http.get('http://maps.google.com/maps/api/geocode/json?address=' + mapQuery).then(function(response){
@@ -14,8 +15,8 @@ angular.module('queryForm').
               return alert('Please enter a valid address!')
             };
             var coords = mapsData.results[0].geometry.location;
-            self.latitude = coords.lat;
             self.longitude = coords.lng;
+            return self.latitude = coords.lat;
           });
         }
       }
